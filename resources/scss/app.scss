@@ -54,7 +54,7 @@ div.jumbo {
 main {
     section {
         background-color: #1c1c1c;
-        padding: 30px 0;
+        padding-top: 30px;
 
         &>div:first-child {
             @include my-container;
@@ -119,5 +119,63 @@ main {
                 height: 55px;
             }
         }
+    }
+}
+
+footer {
+    .more-liks {
+        padding-top: 30px;
+        background-image: url(../img/footer-bg.jpg);
+        background-size: cover;
+
+
+        &>div {
+            @include my-container;
+            position: relative;
+        }
+    }
+
+    img {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        transform: translateY(+15%);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .list-credits {
+        display: flex;
+        height: 370px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .title-credit {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    // li>ul {
+    //     margin-top: 20px;
+    // }
+
+    .subtitle {
+        font-size: 16px;
+        color: #959595;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 }
