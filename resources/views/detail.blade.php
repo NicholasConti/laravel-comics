@@ -9,5 +9,6 @@
 @include('partials.detail-top')
 
 @include('partials.detail-bot')
+@include('partials.cards-link')
 
 @endsection
