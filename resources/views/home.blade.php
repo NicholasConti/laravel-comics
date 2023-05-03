@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('page.title')
 Home
@@ -8,12 +8,7 @@ Home
         <div>
                 @foreach ($comics as $comic)
                 <div class="product">
-                    <div>
-                        <img src="{{ $comic['thumb'] }}" alt="">
-                    </div>
-                    <div>
-                        <h3>{{ $comic['title'] }}</h3>
-                    </div>
+                   @include('partials.card')
                 </div>
                 @endforeach
         </div>

@@ -19,3 +19,11 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/detail/{index}', function ($index) {
+
+    $all_comics = config('comics');
+    $comic = $all_comics[$index];
+
+    return view('detail', compact('comic'));
+})->name('detail');

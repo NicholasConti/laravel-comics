@@ -12,6 +12,23 @@ button {
     cursor: pointer;
 }
 
-body {
-    font-family: "Montserrat";
+.cnt-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.poster {
+    height: 80px;
+    background-color: $dc-color;
+
+    img {
+        width: 195px;
+        height: 295px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-80%);
+        border: 1px solid white;
+    }
 }

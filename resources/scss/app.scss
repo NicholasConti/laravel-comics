@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import "../scss/_partials/variables.scss";
 
 @import "../scss/_partials/general.scss";
-@import "../scss/_partials/variables.scss";
 
 header {
     @include my-container;
@@ -85,6 +85,11 @@ main {
             h3 {
                 margin-top: 20px;
                 font-size: 14px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
             }
         }
 
