@@ -12,14 +12,7 @@ button {
     cursor: pointer;
 }
 
-.cnt-detail {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-}
-
 .poster {
-    height: 80px;
     background-color: $dc-color;
 
     img {
@@ -31,4 +24,61 @@ button {
         transform: translateY(-80%);
         border: 1px solid white;
     }
+}
+
+.cnt-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 0;
+
+    &.card-data {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #003f5e;
+            font-size: 25px;
+        }
+
+        h6 {
+            font-weight: bold;
+            text-align: right;
+            color: #55555a;
+        }
+
+        div:first-child {
+            width: 70%;
+
+            .btn-green.price {
+                border-right: 1px solid #357739;
+            }
+
+            p {
+                margin-top: 15px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .btn-green {
+        max-width: 650px;
+        padding: 7px 12px;
+        background-color: #55ba59;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+
+        .price {
+            width: 70%;
+        }
+
+        span {
+            color: #bafd9c;
+        }
+    }
+
 }
