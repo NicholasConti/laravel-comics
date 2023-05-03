@@ -88,4 +88,39 @@
         <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
         </div>
     </div>
+    <div class="socials">
+        <div>
+            <button>SIGN-UP NOW!</button>
+            <div class="socials">
+                <h4>FOLLOW US</h4>
+                <ul>
+                    <li>
+                        <a>
+                            <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="icon.alt">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="icon.alt">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="icon.alt">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="icon.alt">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="icon.alt"> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
