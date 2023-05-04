@@ -7,6 +7,7 @@
             <div class="lists">
                <div>Art by</div>
                <div>
+                {{-- CYCLED ARTISTS IN comics.php  --}}
                 @foreach ($comic['artists'] as $artist)
                     <a href="#">{{ $artist }},</a>
                 @endforeach
@@ -15,6 +16,7 @@
             <div class="lists">
                 <div>Written by</div>
                 <div>
+                {{-- CYCLED WRITERS IN comics.php  --}}
                  @foreach ($comic['writers'] as $writer)
                      <a href="#">{{ $writer }},</a>
                  @endforeach

@@ -1,3 +1,5 @@
+{{-- CARD ELEMENT --}}
+
 <a href="{{ route('detail', ['index' => $loop->index]) }}">
 <div>
     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">

@@ -1,0 +1,77 @@
+main {
+    z-index: 100;
+    background-color: white;
+    position: relative;
+
+    section {
+        background-color: #1c1c1c;
+        padding-top: 30px;
+
+        &>div:first-child {
+            @include my-container;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div.load {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            button {
+                border: none;
+                background-color: $dc-color;
+                color: white;
+                font-weight: bold;
+                padding: 15px 50px;
+            }
+        }
+
+        .product {
+            width: calc(100% / 6);
+            padding: 14px;
+            color: white;
+            text-transform: uppercase;
+
+            h3 {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        .merch-bar {
+            background-color: $dc-color;
+
+
+
+
+            padding: 50px 0;
+
+
+            ul {
+                @include my-container;
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+            }
+
+
+            a {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            img {
+                height: 55px;
+            }
+        }
+    }
+}
